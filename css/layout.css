@@ -1,0 +1,30 @@
+#game-window{
+	width:300px;
+	height: 400px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	}
+#background{
+	height: 20000000px;
+	width: 300px;
+	background:url(../images/track.jpg) repeat-y;
+	position: absolute;
+}
+#content{
+	height: 100%;
+	color:white;
+	position: relative;
+}
+.opponent{
+	height:100px;
+	width: 100px;
+	background:url(../images/opp-car.png);
+	position: absolute;
+}
+.hero{
+	height:100px;
+	width: 100px;
+	background:url(../images/hero-car.png);
+	position: absolute;
+}
