@@ -4,6 +4,9 @@ var backPos=0;//default background position
 var oppCounter=1;//count the number of opponents
 var hCount=1;
 var hx=100;
+var score=0;
+var eScore=document.getElementById("score");
+console.log(eScore);
 var hero=document.getElementsByClassName("hero");
 		document.addEventListener('keydown', function(event) {
 		    if(event.keyCode == 37) {//for left press
@@ -61,15 +64,18 @@ function gameLoop (){
 	this.moveTrackDownwards=function(){
 		background.style.top = backPos+"px";
 		backPos-=2;
+		score+=20;//calculates score
 	}
 	this.collisionDetection=function(){
 		if(that.y==204 && that.x==hx){
+			 eScore.innerHTML="<h1>You scored</h1><h2>"+score+"</h2>";//display score at end of game
 				that.gameOver();
 			}
 	}
 	this.gameOver=function(){
 		clearInterval(setI)
-		alert("game over");
+		var gOver=document.getElementById("game-over");
+		gOver.style.display="block";
 	}	
 }
 var setI=setInterval(game,1500);

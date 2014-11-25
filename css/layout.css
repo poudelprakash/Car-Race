@@ -28,3 +28,31 @@
 	background:url(../images/hero-car.png);
 	position: absolute;
 }
+#game-over{
+	background:url(../images/game-over.png);
+	color:white;
+	width:200px;
+	height:140px;
+	position: absolute;
+	left:50px;
+	top: 50px;
+	display: none;
+}
+.menu{
+	background-color: #000;
+	color:white;
+	width:200px;
+	height:140px;
+	position: absolute;
+	right:50px;
+	top: 50px;
+	padding: 10px;
+	text-align: center;
+}
+.menu ul li{
+	margin-left: 15px;
+}
+.menu h2{
+	
+	color: green;
+}
